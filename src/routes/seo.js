@@ -4,7 +4,7 @@ import { clientOrigins } from "../config/env.js";
 import { asyncHandler } from "../utils/httpError.js";
 
 const router = Router();
-const site = () => (clientOrigins[clientOrigins.length - 1] || "http://localhost:5173").replace(/\/$/, "");
+const site = () => (clientOrigins[clientOrigins.length - 1] || "https://portfolio-nu-lake-59.vercel.app/").replace(/\/$/, "");
 
 const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
