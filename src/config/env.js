@@ -4,7 +4,7 @@ import { z } from "zod";
 const schema = z.object({
   PORT: z.coerce.number().default(5000),
   NODE_ENV: z.enum(["development", "production", "test"]).default("development"),
-  CLIENT_ORIGIN: z.string().default("http://localhost:5173"),
+  CLIENT_ORIGIN: z.string().default("https://portfolio-nu-lake-59.vercel.app/"),
   SUPABASE_URL: z.string().url(),
   SUPABASE_SERVICE_ROLE_KEY: z.string().min(20),
   JWT_SECRET: z.string().min(16),
