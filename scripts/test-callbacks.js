@@ -7,7 +7,7 @@
 // Find the CheckoutRequestID in the `payments` table after starting a checkout.
 import "dotenv/config";
 
-const [checkoutId, amountArg, baseUrl = `http://localhost:${process.env.PORT || 5000}`] = process.argv.slice(2);
+const [checkoutId, amountArg, baseUrl = `https://portfoliobackend-w310.onrender.com`] = process.argv.slice(2);
 if (!checkoutId || !amountArg) {
   console.error("Usage: node scripts/test-callbacks.js <CheckoutRequestID> <amount> [baseUrl]");
   process.exit(1);
